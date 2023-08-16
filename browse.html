@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- Page setup -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel = "stylesheet" type="text/css" href="style.css">
+		<title>MovieHub - Browse</title> <!-- Title and icon -->
+		<link rel="icon" type="image/x-icon" href="images/icon.png" alt="icon">
+	</head>
+	<body>
+		<!-- Navigation Bar -->
+		<div class="navbar">
+			<a href="index.html"><img id="logo" src="images\logos.png" alt="logo" width="140" height="60"></a>
+			<div class="navbuttons">
+				<a href="index.html">Home</a>
+				<div class="dropdown"> <!-- Dropdown menu for more precise navigation -->
+					<a href="browse.html" class="dropbtn">Browse Movies</a>
+					<div class="dropdown-content">
+						<a href="browse.html#recent">Recently Released</a>
+						<a href="browse.html#highest-rated">Highest Rated</a>
+						<a href="browse.html#action">Action Films</a>
+						<a href="browse.html#comedy">Comedy Films</a>
+						<a href="browse.html#drama">Drama Films</a>
+					</div>
+				</div>
+				<a href="contact.html">Contact</a>
+				<div class="dropdown" id="settings"> <!-- Dropdown to change background colour -->
+					<a class="dropbtn">Settings</a>
+					<div class="dropdown-content">
+						<div style="color: black; padding: 5px; text-align: center;">Background colour</div>
+						<label for="colorDefault"><input type="radio" name="color" id="colorDefault" onchange="changeBackgroundColor('radial-gradient(rgb(40, 22, 66), rgb(46, 20, 42), rgb(0, 0, 0))')"> Default</label>
+						<label for="colorRed"><input type="radio" name="color" id="colorRed" onchange="changeBackgroundColor('radial-gradient(rgb(129, 16, 24), rgb(68, 17, 17), rgb(24, 2, 2))')"> Red</label>
+						<label for="colorBlue"><input type="radio" name="color" id="colorBlue" onchange="changeBackgroundColor('radial-gradient(rgb(42, 62, 126),rgb(13, 24, 67), rgb(0, 3, 18))')"> Blue</label>
+						<label for="colorGreen"><input type="radio" name="color" id="colorGreen" onchange="changeBackgroundColor('radial-gradient(rgb(42, 126, 45),rgb(13, 67, 36), rgb(0, 18, 6))')"> Green</label>
+						<label for="colorDreamy"><input type="radio" name="color" id="colorDreamy" onchange="changeBackgroundColor('radial-gradient(rgb(99, 141, 60),rgb(41, 78, 113), rgb(147, 71, 124))')"> Dreamy</label>
+						<!-- JavaScript function to change background colour -->
+						<script>
+							function changeBackgroundColor(color) {
+								document.body.style.backgroundImage = color;}   
+						</script> 
+					</div>
+				</div>
+			</div> 
+		</div>
+    	<div class="main">
+			<h1 id="heading" style="font-size: 80px; text-align: center; margin: 30px; padding: 0; margin-bottom: 80px; ">Browse Movies</h1>
+			<div class="browse">
+				<!-- First row of images -->
+				<h1 class="first" id="recent">Recently Released</h1>
+				<div class="image-row">
+					<div class="image-box">
+						<a href="browse/missionimpossible.html"><img src="images/Pmidr-wikipedia.jpg" alt="Image 2"></a>
+						<p>Img source: Wikipedia</p>
+						<h3 class="image-caption">Mission: Impossible - Dead Reckoning Part One</h3>
+					</div>
+					<div class="image-box">
+						<a href="browse/oppenheimer.html"><img src="images/Poppenheimer.jpg" alt="Image 2"></a>
+						<p>Img source: IMDB</p>
+						<h3 class="image-caption">Oppenheimer</h3>
+					</div>
+					<div class="image-box">
+						<a href="browse/barbie.html"><img src="images/Pbarbie-TheMovieDatabase.jpg" alt="Image 2"></a>
+						<p>Img source: The Movie Database</p>
+						<h3 class="image-caption">Barbie</h3>
+					</div>
+					<div class="image-box">
+						<a href="browse/theflash.html"><img src="images/Pflash.jpg" alt="Image 2"></a>
+						<p>Img source: IMDB</p>
+						<h3 class="image-caption">The Flash</h3>
+					</div>
+					<div class="image-box">
+						<a href="browse/indianajones.html"><img src="images/Pij-disneyuk.jpeg" alt="Image 2"></a>
+						<p>Img source: Disney UK</p>
+						<h3 class="image-caption">Indiana Jones and the Dial of Destiny</h3>
+					</div>
+				</div>
+				<!-- Second row of images -->
+				<h1 id="highest-rated">Highest rated</h1>
+				<div class="image-row">
+					<div class="image-box">
+						<a href="browse/thedarkknight.html"><img src="images/Pbatman.jpg" alt="Image 2"></a>
+						<p>Img source: IMDB</p>
+						<h3 class="image-caption">The Dark Knight</h3>
+					</div>
+					<div class="image-box">
+						<a href="browse/shawshankredemption.html"><img src="images/Pshawshank.jpg" alt="Image 2"></a>
+						<p>Img source: IMDB</p>
+						<h3 class="image-caption">The Shawshank Redemption</h3>
+					</div>
+					<div class="image-box">
+						<a href="browse/lordoftherings.html"><img src="images/Ptlotr.jpg" alt="Image 2"></a>
+						<p>Img source: IMDB</p>
+						<h3 class="image-caption">The Lord of the Rings and the Two Towers</h3>
+					</div>
+					<div class="image-box">
+						<a href="browse/spiderverse.html"><img src="images/Pspiderman.jpg" alt="Image 2"></a>
+						<p>Img source: IMDB</p>
+						<h3 class="image-caption">Spider-man: Across the Spider-verse</h3>
+					</div>
+					<div class="image-box">
+						<a href="browse/inception.html"><img src="images/Pinception.jpg" alt="Image 2"></a>
+						<p>Img source: IMDB</p>
+						<h3 class="image-caption">Inception</h3>
+					</div>
+				</div>
+				<!-- Third row of images -->
+				<h1 id="action">Action Films</h1>
+				<div class="image-row">
+					<div class="image-box">
+						<a href="browse/charted.html"><img src="images/Puncharted-IGN.jpg" alt="Image 2"></a>
+						<p>Img source: IGN</p>
+						<h3 class="image-caption">Uncharted</h3>
+					</div>
+					<div class="image-box">
+						<a href="browse/drstrange.html"><img src="images/Pdrstrange.jpg" alt="Image 2"></a>
+						<p>Img source: IMDB</p>
+						<h3 class="image-caption">Doctor Strange in the Multiverse of Madness</h3>
+					</div>
+					<div class="image-box">
+						<a href="browse/transformers.html"><img src="images/Ptransformers.jpg" alt="Image 2"></a>
+						<p>Img source: IMDB</p>
+						<h3 class="image-caption">Transformers: Rise of the Beasts</h3>
+					</div>
+					<div class="image-box">
+						<a href="browse/guardians.html"><img src="images/Pgotg.jpg" alt="Image 2"></a>
+						<p>Img source: IMDB</p>
+						<h3 class="image-caption">The Guardians of the Galaxy Vol. 3</h3>
+					</div>
+					<div class="image-box">
+						<a href="browse/jamesbond.html"><img src="images/Pbond.jpg" alt="Image 2"></a>
+						<p>Img source: IMDB</p>
+						<h3 class="image-caption">Spectre</h3>
+					</div>
+				</div>
+				<!-- Fourth row of images -->
+				<h1 id="comedy">Comedy Films</h1>
+				<div class="image-row">
+					<div class="image-box">
+						<a href="browse/centralintelligence.html"><img src="images/Pcenchintel.jpg" alt="Image 2"></a>
+						<p>Img source: IMDB</p>
+						<h3 class="image-caption">Central Intelligence</h3>
+					</div>
+					<div class="image-box">
+						<a href="browse/johnnyenglish.html"><img src="images/Pjohnnyenglish-Filmaffinity.jpg" alt="Image 2"></a>
+						<p>Img source: Film Affinity</p>
+						<h3 class="image-caption">Johnny English Strikes Again</h3>						</div>
+					<div class="image-box">
+						<a href="browse/freeguy.html"><img src="images/Pfreeguy.jpg" alt="Image 2"></a>
+						<p>Img source: IMDB</p>
+						<h3 class="image-caption">Free Guy</h3>
+					</div>
+					<div class="image-box">
+						<a href="browse/pussinboots.html"><img src="images/Ppussinboots-DreamWorksAnimation.jpg" alt="Image 2"></a>
+						<p>Source: DreamWorks Animation</p>
+						<h3 class="image-caption">Puss in Boots: The Last Wish</h3>
+					</div>
+					<div class="image-box">
+						<a href="browse/jumanji.html"><img src="images/Pjumanji.jpg" alt="Image 2"></a>
+						<p>Img source: IMDB</p>
+						<h3 class="image-caption">Jumanji: The Next Level</h3>
+					</div>
+				</div>
+				<!-- Fifth row of images -->
+				<h1 id="drama">Drama Films</h1>
+				<div class="image-row">
+					<div class="image-box">
+						<a href="browse/1917.html"><img src="images/P1917.jpg" alt="Image 2"></a>
+						<p>Img source: IMDB</p>
+						<h3 class="image-caption">1917</h3>
+					</div>
+					<div class="image-box">
+						<a href="browse/elvis.html"><img src="images/Pelivs.jpg" alt="Image 2"></a>
+						<p>Img source: IMDB</p>
+						<h3 class="image-caption">Elvis</h3>
+					</div>
+					<div class="image-box">
+						<a href="browse/tbitsp.html"><img src="images/Ptbitsp.jpg" alt="Image 2"></a>
+						<p>Img source: IMDB</p>
+						<h3 class="image-caption">The Boy in the Striped Pyjamas</h3>
+					</div>
+					<div class="image-box">
+						<a href="browse/thesocialnetwork.html"><img src="images/Pfacebook-TheScriptLab.jpg" alt="Image 2"></a>
+						<p>Img source: The Script Lab</p>
+						<h3 class="image-caption">The Social Network</h3>
+					</div>
+					<div class="image-box">
+						<a href="browse/astarisborn.html"><img src="images/Pastarisborn.jpg" alt="Image 2"></a>
+						<p>Img source: IMDB</p>
+						<h3 class="image-caption">A Star is Born</h3>
+					</div>
+				</div>
+			</div>
+      	</div>
+		<!-- Footer -->
+		<footer>
+			<div id="sitemap">
+				<div class="sitemap-section">
+					<h4>MovieHub</h4>
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="browse.html">Browse Movies</a></li>
+						<li><a href="contact.html">Contact Us</a></li>
+					</ul>
+				</div>
+				<div class="sitemap-section">
+					<h4>Browse</h4>
+					<ul>
+						<li><a href="browse.html#recent">Recently Released</a></li>
+						<li><a href="browse.html#highest-rated">Highest Rated</a></li>
+						<li><a href="browse.html#action">Action</a></li>
+						<li><a href="browse.html#comedy">Comedy</a></li>
+						<li><a href="browse.html#drama">Drama</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="socials">
+				<div class="social-img">
+					<a href="https://facebook.com"><img src="images/facebook.png" alt="Facebook" width="50" height="50"></a>
+					<p>Facebook</p>
+				</div>
+				<div class="social-img">
+					<a href="https://www.instagram.com/"><img src="images/ig.png" alt="Instagram" width="50" height="50"></a>
+					<p>Instagram</p>
+				</div>
+				<div class="social-img">
+					<a href="https://www.twitter.com"><img src="images/x.png" alt="Twitter" width="50" height="50"></a>
+					<p>Twitter</p>
+				</div>
+			</div>
+		</footer>	
+	</body>
+</html>
