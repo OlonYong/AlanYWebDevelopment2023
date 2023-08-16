@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- Page setup -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel = "stylesheet" type="text/css" href="style.css">
+		<title>MovieHub - Contact</title> <!-- Title and icon -->
+		<link rel="icon" type="image/x-icon" href="images/icon.png">
+	</head>
+	<body id="contact">
+		<!-- Navigation Bar -->
+		<div class="navbar">
+			<a href="index.html"><img id="logo" src="images/logos.png" alt="logo" width="140" height="60"></a>
+			<div class="navbuttons">
+				<a href="index.html">Home</a>
+				<div class="dropdown"> <!-- Dropdown menu for more precise navigation -->
+					<a href="browse.html" class="dropbtn">Browse Movies</a>
+					<div class="dropdown-content">
+						<a href="browse.html#recent">Recently Released</a>
+						<a href="browse.html#highest-rated">Highest Rated</a>
+						<a href="browse.html#action">Action Films</a>
+						<a href="browse.html#comedy">Comedy Films</a>
+						<a href="browse.html#drama">Drama Films</a>
+					</div>
+				</div>
+				<a href="contact.html">Contact</a>
+				<div class="dropdown" id="settings"> <!-- Dropdown to change background colour -->
+					<a class="dropbtn">Settings</a>
+					<div class="dropdown-content">
+						<div style="color: black; padding: 5px; text-align: center;">Background colour</div>
+						<label for="colorDefault"><input type="radio" name="color" id="colorDefault" onchange="changeBackgroundColor('radial-gradient(rgb(40, 22, 66), rgb(46, 20, 42), rgb(0, 0, 0))')"> Default</label>
+						<label for="colorRed"><input type="radio" name="color" id="colorRed" onchange="changeBackgroundColor('radial-gradient(rgb(129, 16, 24), rgb(68, 17, 17), rgb(24, 2, 2))')"> Red</label>
+						<label for="colorBlue"><input type="radio" name="color" id="colorBlue" onchange="changeBackgroundColor('radial-gradient(rgb(42, 62, 126),rgb(13, 24, 67), rgb(0, 3, 18))')"> Blue</label>
+						<label for="colorGreen"><input type="radio" name="color" id="colorGreen" onchange="changeBackgroundColor('radial-gradient(rgb(42, 126, 45),rgb(13, 67, 36), rgb(0, 18, 6))')"> Green</label>
+						<label for="colorDreamy"><input type="radio" name="color" id="colorDreamy" onchange="changeBackgroundColor('radial-gradient(rgb(99, 141, 60),rgb(41, 78, 113), rgb(147, 71, 124))')"> Dreamy</label>
+						<!-- JavaScript function to change background colour -->
+						<script>
+							function changeBackgroundColor(color) {
+								document.body.style.backgroundImage = color;}   
+						</script> 
+					</div>
+				</div>
+			</div> 
+		</div>
+		<!-- Main content -->
+		<main>
+			<h2>Contact</h2>
+			<!-- About the website -->
+			<div id="about">
+				<h2>About us</h2>
+				<p>At MovieHub, we're all about providing honest and straightforward movie reviews. Our goal is to help you make informed decisions about which movies to watch next, whether you're looking for a casual night in or a captivating cinematic experience.<br>
+					We believe that every movie has something unique to offer, and our reviews aim to capture the essence of each film while offering insights that matter. Thanks for visiting our site, and we hope you enjoy our reviews as much as we enjoy writing them!</p>
+			</div>
+
+			<!-- Contact form -->
+			<div class="feedback">
+				<h3 id="feedback">Leave us your thoughts!</h3>
+				<p>Full Name</p>
+				<input type="text" placeholder="Your name..">
+				<p>Email</p>
+				<input type="text" placeholder="Your email..">
+				<p>Message</p>
+				<textarea placeholder="Write something.." style="height:200px"></textarea><br>
+				<button onclick="confirmed()">Submit</button> 
+			</div>
+			<!-- JavaScript function to confirm submission -->
+			<script>
+				function confirmed() {
+					alert("Thank you for your feedback!");
+					window.location.reload();
+				}
+			</script>
+		</main>
+		<!-- Footer -->
+		<footer>
+			<div id="sitemap">
+				<div class="sitemap-section">
+					<h4>MovieHub</h4>
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="browse.html">Browse Movies</a></li>
+						<li><a href="contact.html">Contact Us</a></li>
+					</ul>
+				</div>
+				<div class="sitemap-section">
+					<h4>Browse</h4>
+					<ul>
+						<li><a href="browse.html#recent">Recently Released</a></li>
+						<li><a href="browse.html#highest-rated">Highest Rated</a></li>
+						<li><a href="browse.html#action">Action</a></li>
+						<li><a href="browse.html#comedy">Comedy</a></li>
+						<li><a href="browse.html#drama">Drama</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="socials">
+				<div class="social-img">
+					<a href="https://facebook.com"><img src="images/facebook.png" alt="Facebook" width="50" height="50"></a>
+					<p>Facebook</p>
+				</div>
+				<div class="social-img">
+					<a href="https://www.instagram.com/"><img src="images/ig.png" alt="Instagram" width="50" height="50"></a>
+					<p>Instagram</p>
+				</div>
+				<div class="social-img">
+					<a href="https://www.twitter.com"><img src="images/x.png" alt="Twitter" width="50" height="50"></a>
+					<p>Twitter</p>
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>
