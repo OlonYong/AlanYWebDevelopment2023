@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- Page setup -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel = "stylesheet" type="text/css" href="../style.css">
+		<title>MovieHub - Elvis</title> <!-- Title and icon -->
+		<link rel="icon" type="image/x-icon" href="../images/icon.png">
+	</head>
+	<body>
+		<!-- Navigation Bar -->
+		<div class="navbar">
+			<a href="../index.html"><img id="logo" src="../images/logos.png" alt="logo" width="140" height="60"></a>
+			<div class="navbuttons">
+				<a href="../index.html">Home</a>
+				<div class="dropdown"> <!-- Dropdown menu for more precise navigation -->
+					<a href="../browse.html" class="dropbtn">Browse Movies</a>
+					<div class="dropdown-content">
+						<a href="../browse.html#recent">Recently Released</a>
+						<a href="../browse.html#highest-rated">Highest Rated</a>
+						<a href="../browse.html#action">Action Films</a>
+						<a href="../browse.html#comedy">Comedy Films</a>
+						<a href="../browse.html#drama">Drama Films</a>
+					</div>
+				</div>
+				<a href="../contact.html">Contact</a>
+				<div class="dropdown" id="settings"> <!-- Dropdown to change background colour -->
+					<a class="dropbtn">Settings</a>
+					<div class="dropdown-content">
+						<div id="backgrounds">Background colour</div>
+						<label for="colorDefault"><input type="radio" name="color" id="colorDefault" onchange="changeBackgroundColor('radial-gradient(rgb(40, 22, 66), rgb(46, 20, 42), rgb(0, 0, 0))')"> Default</label>
+						<label for="colorRed"><input type="radio" name="color" id="colorRed" onchange="changeBackgroundColor('radial-gradient(rgb(129, 16, 24), rgb(68, 17, 17), rgb(24, 2, 2))')"> Red</label>
+						<label for="colorBlue"><input type="radio" name="color" id="colorBlue" onchange="changeBackgroundColor('radial-gradient(rgb(42, 62, 126),rgb(13, 24, 67), rgb(0, 3, 18))')"> Blue</label>
+						<label for="colorGreen"><input type="radio" name="color" id="colorGreen" onchange="changeBackgroundColor('radial-gradient(rgb(42, 126, 45),rgb(13, 67, 36), rgb(0, 18, 6))')"> Green</label>
+						<label for="colorDreamy"><input type="radio" name="color" id="colorDreamy" onchange="changeBackgroundColor('radial-gradient(rgb(99, 141, 60),rgb(41, 78, 113), rgb(147, 71, 124))')"> Dreamy</label>
+						<!-- JavaScript function to change background colour -->
+						<script>
+							function changeBackgroundColor(color) {
+								document.body.style.backgroundImage = color;}   
+						</script> 
+					</div>
+				</div>
+			</div> 
+		</div>
+		<div id="landscape-img">
+			<h1 id="title">Elvis</h1>
+			<img id="image" src="../images/Lelivs-WarnerBros.jpg" alt="Elvis movie poster">
+			<p>Image Source: Warner Bros</p>
+			</div>
+		
+			<div class="infos">
+			<h3>15+</h3>
+		
+			<div class="ratings">
+				<div class="rating-item">
+					<img src="../images/star.png" alt="Star Rating" width="30" height="30">
+					<img src="../images/star.png" alt="Star Rating" width="30" height="30">
+					<img src="../images/star.png" alt="Star Rating" width="30" height="30">
+					<img src="../images/star.png" alt="Star Rating" width="30" height="30">
+					<img src="../images/halfstar.png" alt="Half Star Rating" width="30" height="30">
+				</div>
+			</div>
+			<h3>2022</h3>
+
+			</div>
+		<h1 class="heading">My review</h1>
+			<p id="review">
+				The man. The legend. The King of rock & roll. 
+				First two acts were a bit more lascivious than I thought it’d be, he really got a fanbase and criticism from simply his wiggle dance? Different times I guess. If you are a fan of Elvis I think you’ll love this. It’s not only Elvis’ story but the colonel’s too. Parker was really leeching Elvis, he helped turn him into the biggest star the world had ever seen but to his own benefit. A good chunk of the movie is told from his perspective as he narrates his side of it. I was enjoying the movie but at some point it started to feel too long, still good in the end. Austin butler really carries the film, not an easy task to outshine Tom Hanks but he did, it’ll probably do wonders for his career. A little surprised they didn’t use cosmetics to age Austin a little more, he looked the same age throughout but it’s a small gremlin. <br><br>
+				
+				Third act of the movie was a more personal dive into Elvis’s struggles, became less about the music and more about Elvis himself and thought that was great. I think the whole movie in general was a good way to honour his legacy and Austin butler’s impersonation of him was spot on. I was surprised at how they managed to squeeze his whole career into just one sitting because his life was pretty hectic. Biography films may not be everyone’s taste, and this may not be the best biopic out there, but it barely puts a foot wrong, so I think it’s worth a watch. <br><br>
+				
+				It also gave me insight into the whole “Elvis appropriated black culture” issue, and maybe I don’t feel as strongly about that because it’s really black American culture and not mine per se (African) but looking at his upbringing I don’t think it was as malicious as it’s made up to be, seems like it was just the music he grew up around. He was a result of his environment if this movie was anything to go by.
+				
+			</p>
+		<div class="back">
+			<button onclick="goBack()">Go Back</button>
+
+			<script>
+			function goBack() {
+				window.history.back();
+			}
+			</script>
+		</div>
+
+		<!-- Footer -->
+		<footer>
+			<div id="sitemap">
+				<div class="sitemap-section">
+					<h4>MovieHub</h4>
+					<ul>
+						<li><a href="../index.html">Home</a></li>
+						<li><a href="../browse.html">Browse Movies</a></li>
+						<li><a href="../contact.html">Contact Us</a></li>
+					</ul>
+				</div>
+				<div class="sitemap-section">
+					<h4>Browse</h4>
+					<ul>
+						<li><a href="../browse.html#recent">Recently Released</a></li>
+						<li><a href="../browse.html#highest-rated">Highest Rated</a></li>
+						<li><a href="../browse.html#action">Action</a></li>
+						<li><a href="../browse.html#comedy">Comedy</a></li>
+						<li><a href="../browse.html#drama">Drama</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="socials">
+				<div class="social-img">
+					<a href="https://facebook.com"><img src="../images/facebook.png" alt="Facebook" width="50" height="50"></a>
+					<p>Facebook</p>
+				</div>
+				<div class="social-img">
+					<a href="https://www.instagram.com/"><img src="../images/ig.png" alt="Instagram" width="50" height="50"></a>
+					<p>Instagram</p>
+				</div>
+				<div class="social-img">
+					<a href="https://www.twitter.com"><img src="../images/x.png" alt="Twitter" width="50" height="50"></a>
+					<p>Twitter</p>
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>

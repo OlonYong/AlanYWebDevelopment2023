@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- Page setup -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel = "stylesheet" type="text/css" href="../style.css">
+		<title>MovieHub - 1917</title> <!-- Title and icon -->
+		<link rel="icon" type="image/x-icon" href="../images/icon.png">
+	</head>
+	<body>
+		<!-- Navigation Bar -->
+		<div class="navbar">
+			<a href="../index.html"><img id="logo" src="../images/logos.png" alt="logo" width="140" height="60"></a>
+			<div class="navbuttons">
+				<a href="../index.html">Home</a>
+				<div class="dropdown"> <!-- Dropdown menu for more precise navigation -->
+					<a href="../browse.html" class="dropbtn">Browse Movies</a>
+					<div class="dropdown-content">
+						<a href="../browse.html#recent">Recently Released</a>
+						<a href="../browse.html#highest-rated">Highest Rated</a>
+						<a href="../browse.html#action">Action Films</a>
+						<a href="../browse.html#comedy">Comedy Films</a>
+						<a href="../browse.html#drama">Drama Films</a>
+					</div>
+				</div>
+				<a href="../contact.html">Contact</a>
+				<div class="dropdown" id="settings"> <!-- Dropdown to change background colour -->
+					<a class="dropbtn">Settings</a>
+					<div class="dropdown-content">
+						<div id="backgrounds">Background colour</div>
+						<label for="colorDefault"><input type="radio" name="color" id="colorDefault" onchange="changeBackgroundColor('radial-gradient(rgb(40, 22, 66), rgb(46, 20, 42), rgb(0, 0, 0))')"> Default</label>
+						<label for="colorRed"><input type="radio" name="color" id="colorRed" onchange="changeBackgroundColor('radial-gradient(rgb(129, 16, 24), rgb(68, 17, 17), rgb(24, 2, 2))')"> Red</label>
+						<label for="colorBlue"><input type="radio" name="color" id="colorBlue" onchange="changeBackgroundColor('radial-gradient(rgb(42, 62, 126),rgb(13, 24, 67), rgb(0, 3, 18))')"> Blue</label>
+						<label for="colorGreen"><input type="radio" name="color" id="colorGreen" onchange="changeBackgroundColor('radial-gradient(rgb(42, 126, 45),rgb(13, 67, 36), rgb(0, 18, 6))')"> Green</label>
+						<label for="colorDreamy"><input type="radio" name="color" id="colorDreamy" onchange="changeBackgroundColor('radial-gradient(rgb(99, 141, 60),rgb(41, 78, 113), rgb(147, 71, 124))')"> Dreamy</label>
+						<!-- JavaScript function to change background colour -->
+						<script>
+							function changeBackgroundColor(color) {
+								document.body.style.backgroundImage = color;}   
+						</script> 
+					</div>
+				</div>
+			</div> 
+		</div>
+		<div id="landscape-img">
+			<h1 id="title">1917</h1>
+			<img id="image" src="../images/L1917-255review.jpg" alt="1917 movie poster">
+			<p>Image Source: 255 Review</p>
+			</div>
+		
+			<div class="infos">
+			<h3>R-13</h3>
+		
+			<div class="ratings">
+				<div class="rating-item">
+					<img src="../images/star.png" alt="Star Rating" width="30" height="30">
+					<img src="../images/star.png" alt="Star Rating" width="30" height="30">
+					<img src="../images/star.png" alt="Star Rating" width="30" height="30">
+					<img src="../images/star.png" alt="Star Rating" width="30" height="30">
+					<img src="../images/halfstar.png" alt="Half Star Rating" width="30" height="30">
+				</div>
+			</div>
+			<h3>2019</h3>
+
+			</div>
+		<h1 class="heading">My review</h1>
+			<p id="review">
+				Epic one-shot movie ever. At least it was made in that way to be one big shot which is really amazing. This is the best of all one-shot movies ever made. The whole movie is so intense and so tight. <br><br>
+
+				Another master piece by Sam Mendes. Sam Mendes and Krysty Wilson-Cairns are the writers. This is the first movie in history to have a female writer for an epic war movie, which is a great thing. Sam Mendes created this story base on his grandfathers tale happened in WW-1. Not many films are made on world war 1, generally we get world war 2 movies every year. <br><br>
+				 
+				Cinematography by Roger Deakins is insane and legendary as always. The movie is filled with astonishing shots. It is a great experience watching in theatre. I totally got immersed while watching the movie. Editing is top notch. The entire movie the camera always moves forward and sometimes circles around but it do not stop which is a symbolism for the story to reach the destination in time and to not stop the journey. Stunt choreography is great. Being a war movie it has limited amount of action scenes which is cool. The natural lighting worked so amazingly and the flares scene is cool. <br><br>
+				
+				Loved George Mackay and Dean Chapman so much. They both done a fabulous job. Colin Firth as the general is good. Andrew Scott is great and funny in just three minutes he got. First shot when Mark Strong appears we only get to see his lower half of his body, we just hear his voice first. Then I realized that he is a great actor so that he can act with just his lower half. Benedict Cumberbatch looked cool in a harsh look just for few minutes but he did not have that much to perform still we understand his motives, his stubbornness his whole character in just a little time. I loved the line of Benedict "There is only one way this war ends, Last Man Standing" such a cool dialogue. Finally Richard Madden show up at great moment to pull emotional strings along with George MacKay and it totally worked for me. <br><br>
+				
+				The run of George at the end is epic and the way he fells two times which is totally not planned before while shooting made it more natural and realistic. I love that scene. The best scenes in this movie are George MacKay and Dean Chapman in no man's land and in the empty enemy barracks, George escaping from the enemies, Come Back to Us song scene, George sprinting across the battlefield and George and Richard Madden scene.    <br><br>
+				
+				Great score by Thomas Newman. When "Come Back to Us" song came in the movie George Mackay falls to the ground and a feeling of relief, relaxation comes to him, a feeling that he reached his destination occurs to him I just felt it with him. I felt a hush inside me when the song played. I love this song so much. <br><br>
+				I am already a huge fan of Thomas Newman, my fandom of Sam Mendes, Roger Deakins increased, and I am a fan of George Mackay and Dean Chapman from now. Definitely Oscar worthy for best picture, best cinematography, best sound editing and mixing.
+				
+			</p>
+		<div class="back">
+			<button onclick="goBack()">Go Back</button>
+
+			<script>
+			function goBack() {
+				window.history.back();
+			}
+			</script>
+		</div>
+
+		<!-- Footer -->
+		<footer>
+			<div id="sitemap">
+				<div class="sitemap-section">
+					<h4>MovieHub</h4>
+					<ul>
+						<li><a href="../index.html">Home</a></li>
+						<li><a href="../browse.html">Browse Movies</a></li>
+						<li><a href="../contact.html">Contact Us</a></li>
+					</ul>
+				</div>
+				<div class="sitemap-section">
+					<h4>Browse</h4>
+					<ul>
+						<li><a href="../browse.html#recent">Recently Released</a></li>
+						<li><a href="../browse.html#highest-rated">Highest Rated</a></li>
+						<li><a href="../browse.html#action">Action</a></li>
+						<li><a href="../browse.html#comedy">Comedy</a></li>
+						<li><a href="../browse.html#drama">Drama</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="socials">
+				<div class="social-img">
+					<a href="https://facebook.com"><img src="../images/facebook.png" alt="Facebook" width="50" height="50"></a>
+					<p>Facebook</p>
+				</div>
+				<div class="social-img">
+					<a href="https://www.instagram.com/"><img src="../images/ig.png" alt="Instagram" width="50" height="50"></a>
+					<p>Instagram</p>
+				</div>
+				<div class="social-img">
+					<a href="https://www.twitter.com"><img src="../images/x.png" alt="Twitter" width="50" height="50"></a>
+					<p>Twitter</p>
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>

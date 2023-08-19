@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- Page setup -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel = "stylesheet" type="text/css" href="../style.css">
+		<title>MovieHub - Spectre</title> <!-- Title and icon -->
+		<link rel="icon" type="image/x-icon" href="../images/icon.png">
+	</head>
+	<body>
+		<!-- Navigation Bar -->
+		<div class="navbar">
+			<a href="../index.html"><img id="logo" src="../images/logos.png" alt="logo" width="140" height="60"></a>
+			<div class="navbuttons">
+				<a href="../index.html">Home</a>
+				<div class="dropdown"> <!-- Dropdown menu for more precise navigation -->
+					<a href="../browse.html" class="dropbtn">Browse Movies</a>
+					<div class="dropdown-content">
+						<a href="../browse.html#recent">Recently Released</a>
+						<a href="../browse.html#highest-rated">Highest Rated</a>
+						<a href="../browse.html#action">Action Films</a>
+						<a href="../browse.html#comedy">Comedy Films</a>
+						<a href="../browse.html#drama">Drama Films</a>
+					</div>
+				</div>
+				<a href="../contact.html">Contact</a>
+				<div class="dropdown" id="settings"> <!-- Dropdown to change background colour -->
+					<a class="dropbtn">Settings</a>
+					<div class="dropdown-content">
+						<div id="backgrounds">Background colour</div>
+						<label for="colorDefault"><input type="radio" name="color" id="colorDefault" onchange="changeBackgroundColor('radial-gradient(rgb(40, 22, 66), rgb(46, 20, 42), rgb(0, 0, 0))')"> Default</label>
+						<label for="colorRed"><input type="radio" name="color" id="colorRed" onchange="changeBackgroundColor('radial-gradient(rgb(129, 16, 24), rgb(68, 17, 17), rgb(24, 2, 2))')"> Red</label>
+						<label for="colorBlue"><input type="radio" name="color" id="colorBlue" onchange="changeBackgroundColor('radial-gradient(rgb(42, 62, 126),rgb(13, 24, 67), rgb(0, 3, 18))')"> Blue</label>
+						<label for="colorGreen"><input type="radio" name="color" id="colorGreen" onchange="changeBackgroundColor('radial-gradient(rgb(42, 126, 45),rgb(13, 67, 36), rgb(0, 18, 6))')"> Green</label>
+						<label for="colorDreamy"><input type="radio" name="color" id="colorDreamy" onchange="changeBackgroundColor('radial-gradient(rgb(99, 141, 60),rgb(41, 78, 113), rgb(147, 71, 124))')"> Dreamy</label>
+						<!-- JavaScript function to change background colour -->
+						<script>
+							function changeBackgroundColor(color) {
+								document.body.style.backgroundImage = color;}   
+						</script> 
+					</div>
+				</div>
+			</div> 
+		</div>
+
+		<div id="landscape-img">
+			<h1 id="title">Spectre</h1>
+			<img id="image" src="../images/Lbond-UniversalExports.jpg" alt="Spectre movie poster">
+			<p>Image Source: Universal Exports</p>
+			</div>
+		
+			<div class="infos">
+			<h3>15+</h3>
+		
+			<div class="ratings">
+				<div class="rating-item">
+					<img src="../images/star.png" alt="Star Rating" width="30" height="30">
+					<img src="../images/star.png" alt="Star Rating" width="30" height="30">
+					<img src="../images/star.png" alt="Star Rating" width="30" height="30">
+					<img src="../images/star.png" alt="Star Rating" width="30" height="30">
+				</div>
+			</div>
+			<h3>2015</h3>
+
+			</div>
+		<h1 class="heading">My review</h1>
+			<p id="review">
+				Spectre continues in a similar vein to Skyfall, unsurprising since this film retains director Sam Mendes and some of the cast from the preceding film, such as Ralph Fiennes as the newly appointed “M”, Naomie Harris as “Moneypenny”, and the ever-faithful Rory Kinnear as chief-of-staff “Bill Tanner”. It feels as if the Daniel Craig saga is finally finding its feet, after a long period of experimentation. Casino Royale was gritty and realistic, dispensing with most of the traditional Bond humour; Quantum of Solace acted as a sequel to Casino Royale – something that had not been done with Bond before. Moreover, Skyfall was a new chapter in the Craig era, in which staples of the Bond formula were somewhat restored, including the British humour, a vintage style of dress, and a larger-than-life nemesis in the form of the excellent Silva, played by Javier Bardem. However, Spectre is a different type of Bond film again, in that this film ties up the threads of all the previous Craig films. (It is unsurprising, therefore, that many speculated this would be Craig’s last outing as Bond). <br><br>
+
+				Spectre opens with a thrilling sequence in Mexico City, to which the backdrop is the famous “Day of the Dead” festival. There is some spectacular camerawork here, with careful tracking shots following the action of the parade. The action really takes off, however, when Bond is chasing the baddie, Marco Sciarra, through the cluttered streets before they both jump into a helicopter. In true Bond fashion, what ensues is a spectacular fight sequence. I was rendered breathless by the fast editing as the helicopter dived and swooped above a frightened crowd. As the helicopter ascended into the sky, I felt pressed into my seat, a moment complemented by a familiar excerpt of Thomas Newman’s score from Skyfall. Naturally this thrill ride of an opener is followed by the intricate opening titles over which plays the theme song – this time around it’s Writing’s on The Wall by Sam Smith, a song with much emotional depth, but one which I had to listen to several times before really appreciating it. <br><br>
+				
+				From then on, the film never lets up, taking us to several stunning locations, including Italy, Austria, and Morocco. (Of note is a beautiful long shot of the train, on which Bond and his love interest, Madeleine Swann, are travelling, as the sun is setting. The Bond women are well-played, decidedly modern characters. Monica Bellucci plays Donna Lucia, the mysterious widow of the recently deceased Sciarra, and Lea Seydoux is the beautiful and independent daughter of Bond’s old opponent, Mr. White. <br><br>
+				
+				Daniel Craig, naturally, has subtly changed his characterisation of Bond over the years. However, he has now found a nice balance between Sean Connery’s animalism and Roger Moore’s humour, with his own inimitable style thrown in. I do believe, however, that Mr Bond has met his match with Christoph Waltz’s villain, Franz Oberhauser. Waltz really steals the show with his interpretation of the classically cold, Bond villain.
+				
+			</p>
+		<div class="back">
+			<button onclick="goBack()">Go Back</button>
+
+			<script>
+			function goBack() {
+				window.history.back();
+			}
+			</script>
+		</div>
+
+		<!-- Footer -->
+		<footer>
+			<div id="sitemap">
+				<div class="sitemap-section">
+					<h4>MovieHub</h4>
+					<ul>
+						<li><a href="../index.html">Home</a></li>
+						<li><a href="../browse.html">Browse Movies</a></li>
+						<li><a href="../contact.html">Contact Us</a></li>
+					</ul>
+				</div>
+				<div class="sitemap-section">
+					<h4>Browse</h4>
+					<ul>
+						<li><a href="../browse.html#recent">Recently Released</a></li>
+						<li><a href="../browse.html#highest-rated">Highest Rated</a></li>
+						<li><a href="../browse.html#action">Action</a></li>
+						<li><a href="../browse.html#comedy">Comedy</a></li>
+						<li><a href="../browse.html#drama">Drama</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="socials">
+				<div class="social-img">
+					<a href="https://facebook.com"><img src="../images/facebook.png" alt="Facebook" width="50" height="50"></a>
+					<p>Facebook</p>
+				</div>
+				<div class="social-img">
+					<a href="https://www.instagram.com/"><img src="../images/ig.png" alt="Instagram" width="50" height="50"></a>
+					<p>Instagram</p>
+				</div>
+				<div class="social-img">
+					<a href="https://www.twitter.com"><img src="../images/x.png" alt="Twitter" width="50" height="50"></a>
+					<p>Twitter</p>
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>

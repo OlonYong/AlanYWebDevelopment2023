@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- Page setup -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel = "stylesheet" type="text/css" href="../style.css">
+		<title>MovieHub - Spider-man: Across the Spider-Verse</title> <!-- Title and icon -->
+		<link rel="icon" type="image/x-icon" href="../images/icon.png">
+	</head>
+	<body>
+		<!-- Navigation Bar -->
+		<div class="navbar">
+			<a href="../index.html"><img id="logo" src="../images/logos.png" alt="logo" width="140" height="60"></a>
+			<div class="navbuttons">
+				<a href="../index.html">Home</a>
+				<div class="dropdown"> <!-- Dropdown menu for more precise navigation -->
+					<a href="../browse.html" class="dropbtn">Browse Movies</a>
+					<div class="dropdown-content">
+						<a href="../browse.html#recent">Recently Released</a>
+						<a href="../browse.html#highest-rated">Highest Rated</a>
+						<a href="../browse.html#action">Action Films</a>
+						<a href="../browse.html#comedy">Comedy Films</a>
+						<a href="../browse.html#drama">Drama Films</a>
+					</div>
+				</div>
+				<a href="../contact.html">Contact</a>
+				<div class="dropdown" id="settings"> <!-- Dropdown to change background colour -->
+					<a class="dropbtn">Settings</a>
+					<div class="dropdown-content">
+						<div id="backgrounds">Background colour</div>
+						<label for="colorDefault"><input type="radio" name="color" id="colorDefault" onchange="changeBackgroundColor('radial-gradient(rgb(40, 22, 66), rgb(46, 20, 42), rgb(0, 0, 0))')"> Default</label>
+						<label for="colorRed"><input type="radio" name="color" id="colorRed" onchange="changeBackgroundColor('radial-gradient(rgb(129, 16, 24), rgb(68, 17, 17), rgb(24, 2, 2))')"> Red</label>
+						<label for="colorBlue"><input type="radio" name="color" id="colorBlue" onchange="changeBackgroundColor('radial-gradient(rgb(42, 62, 126),rgb(13, 24, 67), rgb(0, 3, 18))')"> Blue</label>
+						<label for="colorGreen"><input type="radio" name="color" id="colorGreen" onchange="changeBackgroundColor('radial-gradient(rgb(42, 126, 45),rgb(13, 67, 36), rgb(0, 18, 6))')"> Green</label>
+						<label for="colorDreamy"><input type="radio" name="color" id="colorDreamy" onchange="changeBackgroundColor('radial-gradient(rgb(99, 141, 60),rgb(41, 78, 113), rgb(147, 71, 124))')"> Dreamy</label>
+						<!-- JavaScript function to change background colour -->
+						<script>
+							function changeBackgroundColor(color) {
+								document.body.style.backgroundImage = color;}   
+						</script> 
+					</div>
+				</div>
+			</div> 
+		</div>
+		<div id="landscape-img">
+			<h1 id="title">Spider-man: Across the Spider-Verse</h1>
+			<img id="image" src="../images/Lspiderman-ThePlaylist.jpg" alt="Spider-man: Across the Spider-Verse movie poster">
+			<p>Image Source: The Playlist</p>
+			</div>
+		
+			<div class="infos">
+			<h3>PG-13</h3>
+		
+			<div class="ratings">
+				<div class="rating-item">
+					<img src="../images/star.png" alt="Star Rating" width="30" height="30">
+					<img src="../images/star.png" alt="Star Rating" width="30" height="30">
+					<img src="../images/star.png" alt="Star Rating" width="30" height="30">
+					<img src="../images/star.png" alt="Star Rating" width="30" height="30">
+					<img src="../images/halfstar.png" alt="Half Star Rating" width="30" height="30">
+				</div>
+			</div>
+			<h3>2023</h3>
+
+			</div>
+		<h1 class="heading">My review</h1>
+			<p id="review">
+				Spider-Man: Across the Spider-Verse is an absolute triumph that takes everything we loved about the original film and cranks it up to a whole new level. This stunning sequel is a true testament to the power of animation, storytelling, and the enduring legacy of everyone's favourite web-slinger. <br><br>
+
+				The film seamlessly picks up where its predecessor left off, thrusting us back into the mesmerizing world of the Spider-Verse. The animation is once again a visual feast for the eyes, with its vibrant colours, dynamic action sequences, and unique art style. The attention to detail is awe-inspiring, making every frame feel like a meticulously crafted comic book panel brought to life. <br><br>
+				
+				But what truly sets Across the Spider-Verse apart is its heart. The characters are beautifully written and expertly portrayed, drawing us deeper into their journeys and making us truly care about their struggles. Miles Morales continues to shine as a relatable and inspiring protagonist, and we see his growth as he grapples with the responsibilities of being a superhero. <br><br>
+				
+				The introduction of new characters is a stroke of genius, with fresh faces bringing their own unique charm to the Spider-Verse. The interactions between the various Spider-People are filled with humour, heart, and genuine camaraderie. Their chemistry is electric, and the way they come together to face a common threat is both thrilling and emotionally resonant. <br><br>
+				
+				Across the Spider-Verse's narrative is a masterclass in storytelling. It effortlessly weaves together multiple dimensions, offering mind-bending twists and turns that keep you on the edge of your seat. The pacing is superb, balancing intense action sequences with quieter, introspective moments that allow the characters to shine. The screenplay is sharp, witty, and filled with clever nods to the rich Spider-Man lore. <br><br>
+				
+				Composer Daniel Pemberton once again delivers a remarkable score that complements the film perfectly. The music enhances every scene, from heart-pounding battles to poignant character moments, immersing us further into this extraordinary world. <br><br>
+				
+				Spider-Man: Across the Spider-Verse is not just a film; it's a celebration of everything that makes Spider-Man an enduring icon. It captures the essence of the character, the spirit of heroism, and the power of self-belief. It reminds us that anyone can be a hero, regardless of their background or circumstances. <br><br>
+				
+				In conclusion, Spider-Man: Across the Spider-Verse is a cinematic marvel that transcends expectations. It is a visual spectacle, an emotional rollercoaster, and a testament to the power of storytelling. This film is a must-watch for Spider-Man fans, animation enthusiasts, and anyone who appreciates a well-crafted and truly unforgettable movie experience. Brace yourself to be swept away into a world where anyone can wear the mask and be a hero.
+				
+			</p>
+		<div class="back">
+			<button onclick="goBack()">Go Back</button>
+
+			<script>
+			function goBack() {
+				window.history.back();
+			}
+			</script>
+		</div>
+
+		<!-- Footer -->
+		<footer>
+			<div id="sitemap">
+				<div class="sitemap-section">
+					<h4>MovieHub</h4>
+					<ul>
+						<li><a href="../index.html">Home</a></li>
+						<li><a href="../browse.html">Browse Movies</a></li>
+						<li><a href="../contact.html">Contact Us</a></li>
+					</ul>
+				</div>
+				<div class="sitemap-section">
+					<h4>Browse</h4>
+					<ul>
+						<li><a href="../browse.html#recent">Recently Released</a></li>
+						<li><a href="../browse.html#highest-rated">Highest Rated</a></li>
+						<li><a href="../browse.html#action">Action</a></li>
+						<li><a href="../browse.html#comedy">Comedy</a></li>
+						<li><a href="../browse.html#drama">Drama</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="socials">
+				<div class="social-img">
+					<a href="https://facebook.com"><img src="../images/facebook.png" alt="Facebook" width="50" height="50"></a>
+					<p>Facebook</p>
+				</div>
+				<div class="social-img">
+					<a href="https://www.instagram.com/"><img src="../images/ig.png" alt="Instagram" width="50" height="50"></a>
+					<p>Instagram</p>
+				</div>
+				<div class="social-img">
+					<a href="https://www.twitter.com"><img src="../images/x.png" alt="Twitter" width="50" height="50"></a>
+					<p>Twitter</p>
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>
